@@ -1,0 +1,611 @@
+/* General CSS Start */
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("");
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("images/stonewall.jpg");
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("images/stonewall.jpg");
+}
+
+li {
+    float: left;
+}
+
+a:visited {
+    color: White;
+}
+
+a:hover {
+    color: #999999;
+}
+
+a:active {
+    color: #727373;
+}
+
+header div {
+    height: 300px;
+    background-image: url("Images/skyrimheader7.png");
+    image-rendering: auto;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+@font-face {
+    font-family: "Por_Siempre_Gotica";
+    src: url("Por_Siempre_Gotica.ttf");
+}
+
+p {
+    font-size: 24px;
+}
+
+/* General CSS End */
+
+/* Home Page Start */
+
+#home_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding-left: 7%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.final {
+    float: right;
+    width: 25%;
+    padding-right: 5.9%;
+}
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    width: 125px;
+    height: 125px;
+}
+
+#HoverImageID {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.column_2 {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+.row_2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#dev_team {
+    height: 330px;
+}
+
+#Todd {
+    height: 330px;
+}
+
+#caption_2_tam {
+    font-size: 16px;
+    text-align: center;
+}
+
+#caption_2_team {
+    font-size: 16px;
+    text-align: center;
+}
+
+#caption_2_todd {
+    font-size: 16px;
+    text-align: center;
+}
+
+.intro_text {
+    font-size: 20px;
+}
+
+/* Home Page End */
+
+/* Cities Page Start */
+
+#options_box {
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+
+select {
+    height: 40px;
+    font-size: 20px;
+    font-family: Impact;
+    cursor: pointer;
+}
+
+#nocity {
+    display: none;
+}
+
+#whiterun {
+    display: none;
+}
+
+#riften {
+    display: none;
+}
+
+#markarth {
+    display: none;
+}
+
+#solitude {
+    display: none;
+}
+
+#falkreath {
+    display: none;
+}
+
+#winterhold {
+    display: none;
+}
+
+#dawnstar {
+    display: none;
+}
+
+#windhelm {
+    display: none;
+}
+
+#morthal {
+    display: none;
+}
+
+#ravenrock {
+    display: none;
+}
+
+#city_select {
+    font-size: 30px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: "Por_Siempre_Gotica";
+}
+
+/* Cities Page End */
+
+/* Factions Page Start */
+
+#faction_head_text {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+#factions_intro_text {
+    font-size: 24px;
+}
+
+.faction_names {
+    font-size: 20px;
+}
+
+#faction_vid {
+    vertical-align: bottom;
+    width: 560px;
+    height: 315px;
+}
+
+.faction_video_text {
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#companions_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#companions_faction_image {
+    vertical-align: bottom;
+}
+
+.companions_faction_text {
+    font-size: 24px;
+}
+
+#companions_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#college_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#college_faction_image {
+    vertical-align: bottom;
+}
+
+.college_faction_text {
+    font-size: 24px;
+}
+
+#college_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#volkihar_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#volkihar_faction_image {
+    vertical-align: bottom;
+}
+
+.volkihar_faction_text {
+    font-size: 24px;
+}
+
+#volkihar_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#dawnguard_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#dawnguard_faction_image {
+    vertical-align: bottom;
+}
+
+.dawnguard_faction_text {
+    font-size: 24px;
+}
+
+#dawnguard_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#brotherhood_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#brotherhood_faction_image {
+    vertical-align: bottom;
+}
+
+.brotherhood_faction_text {
+    font-size: 24px;
+}
+
+#brotherhood_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#guild_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#guild_faction_image {
+    vertical-align: bottom;
+}
+
+.guild_faction_text {
+    font-size: 24px;
+}
+
+#guild_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#blades_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#blades_faction_image {
+    vertical-align: bottom;
+}
+
+.blades_faction_text {
+    font-size: 24px;
+}
+
+#blades_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#stormcloaks_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#stormcloaks_faction_image {
+    vertical-align: bottom;
+}
+
+.stormcloaks_faction_text {
+    font-size: 24px;
+}
+
+#stormcloaks_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#imperials_faction {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#imperials_faction_image {
+    vertical-align: bottom;
+}
+
+.imperials_faction_text {
+    font-size: 24px;
+}
+
+#imperials_cap {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* Factions Page End */
+
+/* House Page Start */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#home_intro_title {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+#house_video {
+    width: 100%;
+    height: 900px;
+}
+
+#Breezehome_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Breezehome_text {
+    font-size: 20px;
+}
+
+#Hjerim_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Hjerim_text {
+    font-size: 20px;
+}
+
+#Honeyside_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Honeyside_text {
+    font-size: 20px;
+}
+
+#Proudspire_Manor_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Proudspire_Manor_text {
+    font-size: 20px;
+}
+
+#Severin_Manor_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Severin_Manor_text {
+    font-size: 20px;
+}
+
+#Vlindrel_Hall_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Vlindrel_Hall_text {
+    font-size: 20px;
+}
+
+#Windstad_Manor_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Windstad_Manor_text {
+    font-size: 20px;
+}
+
+#Lakeview_Manor_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Lakeview_Manor_text {
+    font-size: 20px;
+}
+
+#Heljarchen_Hall_title {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#Heljarchen_Hall_text {
+    font-size: 20px;
+}
+
+/* House Page End */
+
+/* Contact Page Start */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+#contact_form_title {
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+form input, form textarea {
+    background-color: #dbdbdb;
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+}
+
+form button {
+    padding: 15px;
+    background-color: #bae5ff;
+    color: #08a0ff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+/* Contact Page End */
+
+/* About Page Start */
+
+
+
+/* About Page End */
+
+/* Customised Scrolling Bar Start */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Customised Scrolling Bar End */

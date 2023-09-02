@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+    <title>Skyrim Wiki</title>
+    <link rel="stylesheet" type="text/css" href="Assets/site.css">
+    <script src="Assets/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Tab Icon Start -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Website_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/Website_icon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/Website_icon/site.webmanifest">
+    <link rel="mask-icon" href="Assets/Website_icon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Tab Icon End -->
+
+<body>
+    <div id="main">
+        <header>
+            <div></div>
+            <nav>
+                <ul class="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="city.html">Cities</a></li>
+                    <li><a href="faction.html">Factions</a></li>
+                    <li><a href="house.html">Houses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <form class="contact_form" onsubmit="sendEmail(); reset(); return false">
+                <h3 id="contact_form_title">If You Require Assistance Please Contact Us</h3>
+                <input type="text" id="contact_name" placeholder="Your Name" required>
+                <input type="email" id="contact_email" placeholder="Email ID" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <textarea id="text_box_message" rows="4" placeholder="How Can We Help You?"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : " ",
+                    Password : " ",
+                    To : 'rosskernan7@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "Name: " + document.getElementById("contact_name").value
+                        + "<br> Email: " + document.getElementById("contact_email").value
+                        + "<br> Phone Number: " + document.getElementById("phone").value
+                        + "<br> Message: " + document.getElementById("text_box_message").value
+                }).then(
+                message => alert("Message Sent Succesfully")
+                );
+            }
+        </script>
+
+        <!-- It Sends The Info To My Email But Wont Display Any Success Message For Some Reason -->
+
+        <footer>
+            <h5>Site By: Ross Kernan</h5>
+        </footer>
+    </div>
+</body>
+
+</html>

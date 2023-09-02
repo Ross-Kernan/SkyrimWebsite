@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+    <title>Skyrim Wiki</title>
+    <link rel="stylesheet" type="text/css" href="Assets/site.css">
+    <script src="Assets/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Tab Icon Start -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Website_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/Website_icon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/Website_icon/site.webmanifest">
+    <link rel="mask-icon" href="Assets/Website_icon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Tab Icon End -->
+
+<body>
+    <div id="main">
+        <header>
+            <div></div>
+            <nav>
+                <ul class="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="city.html">Cities</a></li>
+                    <li><a href="faction.html">Factions</a></li>
+                    <li><a href="house.html">Houses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="options_box">
+            <label id="city_select" for="cities">City Select : </label>
+
+            <select id="cities" onchange="cityChange()">
+                <option value="0">---------------</option>
+                <option value="1">Whiterun</option>
+                <option value="2">Riften</option>
+                <option value="3">Markarth</option>
+                <option value="4">Solitude</option>
+                <option value="5">Falkreath</option>
+                <option value="6">Winterhold</option>
+                <option value="7">Dawnstar</option>
+                <option value="8">Windhelm</option>
+                <option value="9">Morthal</option>
+                <option value="10">Ravenrock</option>
+            </select>
+        </div>
+        
+        <p id="nocity">You Currently Have No City Selected</p>
+
+        <p id="whiterun">Whiterun was once considered Skyrim's equivalent of the Imperial City, but in recent times has suffered from many problems. The Civil War, excessively harsh winters, harassment by Horme bandits, and the attacks of frost trolls have diminished the once-proud city.<br><br>It's a strategic city for both the Imperial Legion and the Stormcloaks because of its central location, however Jarl Balgruuf the Greater remains neutral in the conflict.<br><br>The city is home to two important dynastic families, the Gray-Manes and the Battle-Borns. Once on good terms with one another, they are currently bitter enemies, as a result of their differing views on the civil war conflict, as well as the economic disparity between both clans, since the Battle-Borns are wealthy and the Gray-Manes are modest.<br><br> Upon entering the city, the Dragonborn is able to choose a side, either Battle-Born or Gray-Mane, although this is not necessary to interact with the city's shops and temple.<br><br>Whiterun is home to The Companions, a faction similar to the Fighters Guild of Cyrodiil. Their headquarters are in Jorrvaskr, a legendary mead hall that was built next to the Skyforge, an ancient forge that is said to be older than both men and Elves. The city of Whiterun itself was built around Jorrvaskr, which attracts warriors from all across Tamriel.</p>
+
+        <p id="riften">The city is located in the beautiful Autumnal Forest region of Skyrim, and that beauty has encroached upon the city, in the form of wondrous foliage and generally pleasant, if not sometimes overcast weather. But most of Riften's structures are wooden, and the city gives off an old and run-down feeling, which often takes visitors by surprise.<br><br> Not that this bothers the residents, who see Riften for what it truly is a bustling, energetic city with a strong economy fueled by hard-working fishermen and mead makers. Despite the fact that the current Jarl in office is Laila Law-Giver, the residents understand that the city is, for all intents and purposes, actually owned and operated by Maven Black-Briar, and in order to survive and thrive, one needs to adhere to her rules.<br><br> Maven's hold over the city is so great, that in the event of an Imperial victory, Maven takes the position of Jarl and remarks that it is only as a title. Despite the city's economic strength, it holds a darker side. The home of the notorious Thieves Guild in Skyrim, Riften also sees much corruption in the form of Maven Black-Briar, especially when dealing with rivals.<br><br> Many poor residents frequent the less desirable areas and thieves, both Guild and freelance, take advantage of the frequent mist, dark alleys, and the Canal, preying on travelers and citizens alike. Such conditions reflect on the city; deaths are common and people will often fight in the street over dropped items.</p>
+
+        <p id="markarth">Markarth, also known as Markarth Side, is one of the many major cities in Skyrim. It is known for its rich silver mines that use convict labour, which are mostly owned by the influential Silver-Bloods family. The cutthroat intrigue surrounding Markarth's silver producing industry popularized the local saying, "Blood and silver are what flows through Markarth...." The city is located in the far west of Skyrim, in the mountains of The Reach, west of the Karth River.<br><br> As a result, the city has a good natural defense, even from the skies. Being a long distance from any other major city and with both main roads cutting through mountains, valleys and rugged terrain, venturing to and from Markarth is one of the most treacherous trips for travelers.<br><br>The city is split by a large running river and comprises two parts: Riverside, where the native Reachmen and the working district are found; and the Dryside, housing all the houses of Nord nobles and Silver-Blood ownership. The Jarl's palace, Understone Keep, is located at the top of the city and contains the Hall of the Dead, the Dwemer Museum, and the Nchuand-Zel Excavation Site where the internal part of the old Dwemer city remains in ruins. Most of the city's residents tend to be quite unfriendly to outsiders.</p>
+
+        <p id="solitude">Solitude is the capital city of both Haafingar Hold, and all of Skyrim. Currently ruled by Jarl Elisif the Fair, widow of the late High King Torygg, it is the headquarters of the Imperial Legion stationed in Skyrim. General Tullius commands the Imperial army from the stone-walled Castle Dour, while Solitude's Jarl, Elisif, resides in the Blue Palace. The Thalmor have an embassy hidden in the nearby mountains.<br><br>Part of the reason for this is the eminently defensible nature of Solitude itself. Set upon a great stone arch that towers above the mouth of the Karth River, the city is surrounded by the soaring peaks of the nearby mountains. Solitude is both a reinforced and breathtaking stronghold. It is also protected from attack from the west by the still-largely intact Fort Hraggstad overlooking the Sea of Ghosts.<br><br>Solitude is also a major shipping port and important Imperial supply line. Solitude sits on a natural arch, giving its port much needed shelter from the strong winds of the Ghost Sea. Most of the shipping in Solitude is run by the Imperial-financed East Empire Company.</p>
+
+        <p id="falkreath">Falkreath is one of the major cities located in Skyrim. It is the capital of Falkreath Hold. The town lies in the southwest of the province of Skyrim, near the borders of Hammerfell and Cyrodiil. At one period in history, Falkreath was part of Cyrodiil. Later, the town became a settlement in Skyrim.<br><br> During the Fourth Era, when the events of The Elder Scrolls V: Skyrim take place, the Jarl of Falkreath is Siddgeir. It is famous for its large graveyard, in which many Nords are buried.The city lies in a valley near the center of Falkreath Hold, in the low-lying forest area some distance west of Helgen.<br><br> Like many of Skyrim's woodland settlements, Falkreath's economy is heavily reliant on the production of lumber. It is one of the smaller major cities, with no real walls surrounding it and not many buildings. The town is far more similar to a small farming village rather than a major city.<br><br> The Hammerfell border can be accessed by road a short walk west of the city. The graveyard of Falkreath contains many famous Nords who requested to be buried in Falkreath, next to the other honored dead of past battles. Since they were constantly living alongside the dead, the people of Falkreath gave many of their shops and other buildings names related to death. As told by the residents, Falkreath was the place of many battles in the past, being the main reason for the large graveyard.</p>
+
+        <p id="winterhold">Winterhold is a former major city which is located in northern Skyrim. It is the capital city of the hold of the same name. Once a great capital rivaling Solitude in power and importance, Winterhold is now little more than a shell of its former self due to the Great Collapse.<br><br>Legends claim that the city was made during the First Era, when Arch-Mage Shalidor built the city of Winterhold with a whispered spell. Whether Winterhold was actually built with magic is unknown, as it could be a hyperbole of Shalidor's power.<br><br>In 1E 369, High King Borgas of Winterhold was killed during the Wild Hunt. This plummeted Skyrim into the War of Succession, which broke apart the First Nordic Empire. Jarl Hanse, the ruler of Winterhold, was supposedly the most capable candidate for High King at the time and that the Moot's failure to appoint him eventually led to the war.</p>
+
+        <p id="dawnstar">Dawnstar is one of the major cities in Skyrim. It is the capital of The Pale, and is known for its rich mines and harbor. It also serves as a garrison town along the northern coast of Skyrim. Governed by Jarl Skald the Elder, it is a relatively small town, consisting of two rival mines, a small dock and a small number of residents. Dawnstar is one of the colder settlements in Skyrim; along with Winterhold and Windhelm, as it resides in perpetual snow and ice. Alongside Winterhold, Dawnstar has very high dragon spawn rates.<br><br>It was after the destruction of a fortress in Dawnstar during 2E 283 that Potentate Versidue Shaie declared martial law, leading to one of the most brutal and bloody periods in the history of Tamriel. This also led to the creation of the Fighters Guild, Mages Guild, and Thieves Guild during the Guilds Act.<br><br>The village was rebuilt at least before the end of the Third Era. However, it is noted in the Pocket Guide to the Empire, Third Edition: Skyrim that Macalla was the Queen of Dawnstar, and had married King Thian of Solitude.<br><br>Around 4E 201, Dawnstar's citizens were suffering from a series of nightmares by the Skull of Corruption. The Last Dragonborn and a former priest of Vaermina, a dunmer named Erandur, went to Nightcaller Temple and ended the city's suffering.</p>
+
+        <p id="windhelm">Windhelm, also known as the City of Kings, is a city located in northeastern Skyrim. It serves as the capital of Eastmarch Hold. It is also the oldest city in Skyrim, possibly the oldest city of man on Tamriel that is still standing, dating back to the Merethic Era.<br><br>After the eruption of Red Mountain, many Dunmer fled to Windhelm and settled in an area known as the "Snow Quarter." The area has since been renamed the "Gray Quarter," as all of the Dunmer have congregated in this area. Reasons as to why vary depending on who is spoken to within the city. Some say that the Nords of Windhelm sequestered the Dunmer from the other citizens in this "Gray Quarter" in reference to the Dunmer skin color.<br><br>Argonians are also segregated from the Nord population and are forced to live at the Argonian Assemblage at the city docks. A decree by Ulfric Stormcloak forbidding the Argonians from living within the city's walls also exists. If the Imperial Legion takes over Windhelm, Brunwulf Free-Winter becomes Jarl, as a supporter of both the Dunmer and Argonians, he believes that the Argonians should remain outside of the city for their own safety, "because most of the folk in the city believe as Ulfric did, that outsiders should not be trusted."<br><br>Dialogue with Ulfric Stormcloak, Windhelm's current Jarl, reveals that he does not attend to the issues occurring in the Gray Quarter due to being too busy with the rebellion. The guards seldom patrol the Gray Quarter and their reasons vary, depending on the characters spoken to within the city.<br><br>Despite the claims of Ulfric's racism towards anyone who is not Nord, High Elves seem to manage living in the city much better than the Dark Elves, despite the fact that the High Elves are the head of the Aldmeri Dominion. Niranye, an Altmer citizen of Windhelm, implies that it is because the Dark Elves refuse to conform, rather than because of Nordic racism. She manages to attain a moderate amount of wealth and owns a stall in the market. Likewise, the Dunmer Belyn Hlaalu is allowed to own a successful farm on the outskirts of the city where he employs an elderly Nord woman, and likewise shares the view that his kin need to stop complaining and work harder to make a home for themselves. However, despite all of this, Belyn still has to live in the Gray Quarter.<br><br>During the Skyrim Civil War, many Windhelm locals believe that they have been too lenient with the non-Nord population. The Dunmer are said to contribute to the city's high crime rate, and are allowed to remain neutral in the Skyrim Civil War, some think that the immigrants are more of a burden to Nord society than a benefit and that Ulfric should start imposing heavier taxes on them as compensation. It is suggested through dialogue with Viola Giordano that the Dunmer's taxes can be raised at the Jarl's whim.</p>
+
+        <p id="morthal">Morthal is a small city in Skyrim located in the dense Drajkmyr Marsh of Hjaalmarch. Its ruling Jarl is Idgrod Ravencrone.<br><br>Morthal, said to be named after the great Atmoran hero Morihaus, lies deep in the marsh, a foreboding area of Hjaalmarch isolated from other villages and shrouded by a constant and ominous fog.<br><br>Morthal's small population and relatively remote location have kept it distant from most major conflicts in recent years. The citizens of Morthal appear reclusive and cautious of outsiders. They are quite vocal about removing the town's more recent settler, a wizard by the name of Falion. They fear he might upset the balance of their quiet and peaceful existence.<br><br>Due to their distrust of magic, the Jarl does not have an acting court wizard. She remains neutral on the presence of a wizard in her town and allows him to practice magic and sell his supplies in the privacy of his own home.<br><br>Due to its isolation and lagging economy, Morthal remains of little strategic importance in the war. The city's lumber mill appears to be its only source of trade, a point which the citizens show concern for. To the east of Morthal lies Stonehills, which supports Rockwallow Mine, but it is owned by Bryling, one of the Thanes of Solitude, and the ore is used to support the Imperial war effort.</p>
+
+        <p id="ravenrock">Raven Rock is a frontier town, located on the southern coast of Solstheim and is the capital of the island. It was originally a mining settlement built by the East Empire Company in the late Third Era. By 4E 201 it is a far cry from its former days. Due to the mines drying up and due to the waters being polluted from the ash coming out of the Red Mountain, the town has become one of beggars and the occasional sellswords with very few trading ships coming by to sell their supplies.<br><br>After the mass Dunmer migration in the early Fourth Era, it has taken on a heavy Dunmer influence in its architecture and culture. House Redoran is an established presence and their banners adorn the walls outside the town. It is policed by the Redoran guard, under the command of Captain Veleth.</p>
+
+        <hr>
+
+        <p id="city_info">You Currently Have No City Selected</p>
+
+        <hr>
+        <div class="row">
+            <div class="column">
+                <img src="Assets/Images/WhiterunGuardShield.png" alt="whiterun_shield" style="width:75%"/>
+                    <p>Whiterun</p>
+            </div>
+            <div class="column">
+                <img src="Assets/Images/RiftenGuardShield.png" alt="riften_shield" style="width:75%"/>
+                    <p>Riften</p>
+            </div>
+            <div class="column">
+                <img src="Assets/Images/MarkarthGuardShield.png" alt="markarth_shield" style="width:75%"/>
+                    <p>Markarth</p>
+            </div>
+            <div class="column">
+                <img src="Assets/Images/SolitudeGuardShield.png" alt="solitude_shield" style="width:75%"/>
+                    <p>Solitude</p>
+            </div>
+            <div class="column">
+                <img src="Assets/Images/FalkreathGuardShield.png" alt="falkreath_shield" style="width:75%"/>
+                    <p>Falkreath</p>
+            </div>
+            <div class="column">
+                <img src="Assets/Images/WinterholdGuardShield.png" alt="winterhold_shield" style="width:75%"/>
+                    <p>Winterhold</p>
+            </div>
+            <div class="final">
+                <img src="Assets/Images/DawnstarGuardShield.png" alt="dawnstar_shield" style="width:75%"/>
+                    <p>Dawnstar</p>
+            </div>
+            <div class="final">
+                <img src="Assets/Images/WindhelmGuardShield.png" alt="windhelm_shield" style="width:75%"/>
+                    <p>Windhelm</p>
+            </div>
+            <div class="final">
+                <img src="Assets/Images/MorthalGuardShield.png" alt="morthal_shield" style="width:75%"/>
+                    <p>Morthal</p>
+            </div>
+        </div>
+
+        <footer>
+            <h5>Site By: Ross Kernan</h5>
+        </footer>
+    </div>
+</body>
+
+</html>

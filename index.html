@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+    <title>Skyrim Wiki</title>
+    <link rel="stylesheet" type="text/css" href="Assets/site.css">
+    <script src="Assets/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Tab Icon Start -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Website_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/Website_icon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/Website_icon/site.webmanifest">
+    <link rel="mask-icon" href="Assets/Website_icon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Tab Icon End -->
+
+<body>
+    <div id="main">
+        <header>
+            <div></div>
+            <nav>
+                <ul class="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="city.html">Cities</a></li>
+                    <li><a href="faction.html">Factions</a></li>
+                    <li><a href="house.html">Houses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <p class="intro_text">Just some basic info that will help you understand just exactly what Skyrim is so you're not entirely confused looking through the website, feel free to skip if you already know about the series or don't care. Skyrims official name is 'The Elder Scrolls V: Skyrim' as its the fifth installment in The Elder Scrolls series, its predecessors being nowhere near as successful as the series Golden Goose. The Elder Scrolls IV Oblivion comprised most of skyrims production team so its very close to the same game at heart. Skyrim was originally released on PS3, Xbox 360 and PC in 2011, but with its remastered edition known as Skyrim: Special Edition is has now been released on Xbox One, PS4, PC again, Xbox Series X, PS5 and Nintendo Switch, it also recieved a VR specialised edition which was released on the PS4VR and PC in 2017. Skyrim is classified as an RPG, Open World, Action Adventure game for ages 18 and up and according to 'HowLongToBeat™', it would take the average person roughly 282 hours or 12 days to finish Skyrim in its entirety. It takes place in another world unlike ours and is referred to as Tamriel which houses all of the other locations used in the game series such as The Elder Scrolls III Morrowind taking place in Morrowind, and The Elder Scrolls IV Oblivion being in Cyrodiil.</p>
+
+        <hr>
+
+        <div class="row_2">
+            <div class="column_2">
+                <img id="tamriel_map" src="Assets/Images/Tamriel_map.jpg" alt="tamriel" style="width:100%"/>
+                <p id="caption_2_tam">Map Of Tamriel</p>
+            </div>
+            <div class="column_2">
+                <img id="dev_team" src="Assets/Images/Skyrim_Team.jpg" alt="team" style="width:100%"/>
+                <p id="caption_2_team">Skyrim Dev Team</p>
+            </div>
+            <div class="column_2">
+                <img id="Todd" src="Assets/Images/God_Todd.jpg" alt="todd" style="width:110%"/>
+                <p id="caption_2_todd">Todd Howard</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3 id="home_title">Skyrim Info</h3>
+
+        <ol>
+            <li>Production Team</li>
+                <ul>
+                    <br><li>Game Director: Todd Howard</li><br>
+                    <li>Lead Artist: Matthew Carofano</li><br>
+                    <li>Lead Designer: Bruce Nesmith</li><br>
+                    <li>Lead Producer: Craig Lafferty</li><br>
+                    <li>Lead Systems Programmer: Brett Douville</li><br>
+                    <li>Music Composer: Jeremy Soule</li><br><br>
+                </ul>
+
+            <li>General Info</li>
+            <ul>
+                <br><li>The entire production team for skyrim only consisted of 100 people</li><br>
+                <li>First announced at the Spike Video Game Awards on December 11, 2010</li><br>
+                <li>Released on November 11 2011 which on a dd/mm/yy format shows 11/11/11</li><br>
+                <li>It has officially been released 12 times as of 2021</li><br>
+                <li>It has recieved over 200 GOTY awards</li><br><br>
+            </ul>
+
+            <li>Most Notable Awards</li>
+            <ul>
+                <br><li>Spike Video Game Awards 2011, the same place it was first announced one year prior</li><br>
+                <li>Game Critics Award For E3 2011</li><br>
+                <li>Game Developers Choice Award: They recieved the GOTY award</li><br><br>
+            </ul>
+        </ol>
+
+        <!-- HTML Validator states I shouldn't use a <ul> tag inside an <ol> tag but i cant see any other way of listing the table other than that and I think it works well here -->
+
+        <hr>
+
+        <p id="HoverImageID">Map Of The Skyrim Region</p>
+
+        <div class="img-magnifier-container">
+          <img id="myimage" src="Assets/Images/Skyrim_map.png" width="1535" height="965" alt="skyrim_map">
+          <script>
+            magnify("myimage", 3);
+          </script>
+        </div>
+
+        <footer>
+            <h5>Site By: Ross Kernan</h5>
+        </footer>
+    </div>
+</body>
+
+</html>
