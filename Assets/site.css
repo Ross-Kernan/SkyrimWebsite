@@ -115,11 +115,18 @@ p {
 }
 
 #dev_team {
-    height: 330px;
+    height: 280px;
+    width: auto;
 }
 
 #Todd {
-    height: 330px;
+    height: 280px;
+    width: auto;
+}
+
+#tamriel_map {
+    height: 280px;
+    width: auto;
 }
 
 #caption_2_tam {
